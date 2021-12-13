@@ -2,7 +2,8 @@ import Link from 'next/link'
 
 function Home() {
   return (
-    <ul>
+    <div>
+      <ul>
       <li>
         <Link href="/">
           <a>Home</a>
@@ -19,6 +20,8 @@ function Home() {
         </Link>
       </li>
     </ul>
+    <h1>Hello Dashboard</h1>
+    </div>
   )
 }
 
