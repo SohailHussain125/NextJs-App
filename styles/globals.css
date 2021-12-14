@@ -14,3 +14,27 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.flex-end-center{
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+}
+.flex-start-center{
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-between-center{
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-center-center{
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.flex{
+  display: flex;
+}
