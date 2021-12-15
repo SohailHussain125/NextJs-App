@@ -1,14 +1,20 @@
 import type { NextPage } from 'next'
-import styled from 'styled-components';
-const MessageContainer = styled.div`
-width:100%;
-height:100vh;
-`
+import ChatListComponent from './chatList';
+import { Col } from 'antd'
+import { MessageContainer, RowStyle } from './Message.style';
+
 const MessagePage: React.FC = ({ data }: any) => {
     return (
 
-        <MessageContainer className='flex-center-center'>
-            <h2>Message Container</h2>
+        <MessageContainer >
+            <RowStyle>
+                <Col lg={6} md={8} sm={10} xs={10}>
+                    <ChatListComponent />
+                </Col>
+                <Col lg={18} md={16} sm={14} xs={14}>
+                    Room
+                </Col>
+            </RowStyle>
         </MessageContainer>
 
 

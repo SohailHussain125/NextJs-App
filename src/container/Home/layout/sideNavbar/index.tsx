@@ -1,46 +1,7 @@
-import styled from "styled-components";
 import Image from 'next/image'
-import homeIcon from "./../../../assets/img/home.png";
-import messageIcon from "./../../../assets/img/chat.png";
-
-
-const SideNavBarContiner = styled.div`
-display:flex;
-flex-direction:column;
-width:260px;
-border-right:8px solid #f2f2f5;
-height:100%;
-padding:20px 0px;
-overflow-y: auto;
-&::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 0px;
- }
-`
-interface NavListProps {
-    isActive?: boolean
-}
-const NavList = styled.div<NavListProps>`
-margin:20px 0px;
-color:${props => props.isActive ? "#37ad2a" : "#000"};
-border-left:${props => props.isActive ? '3px solid #37ad2a' : 'none'};
-padding:0px 20px;
-
-`
-const NavText = styled.span`
-margin-left:10px;
-font-weight:bold
-`
-const UnreadMessageCount = styled.span`
-background-color:#37ad2a;
-width:25px;
-height:20px;
-border-radius:10px;
-color:#fff;
-display:flex;
-align-items:center;
-justify-content:center
-`
+import homeIcon from "./../../../../assets/img/home.png";
+import messageIcon from "./../../../../assets/img/chat.png";
+import { NavList, NavText, SideNavBarContiner, UnreadMessageCount } from "./sideNavbar.style";
 
 const SideNavBar: React.FC = () => {
     return (
